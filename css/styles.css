@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fff;
 }
 :root {
@@ -12,7 +12,7 @@ body {
 /*header*/
 .logo {
     font-family: Raleway;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -32,13 +32,18 @@ body {
     letter-spacing: 0.02em; 
     list-style-type: none;   
 }
-.header-list-link {
+.header-list .link {
     color: var(--first-color);
     text-decoration: none;
 }
-.header-list-link:hover,
-.header-list-link:focus {
-    color: var(--title-first-color);  
+.header-list .link:hover,
+.header-list .link:focus {
+    color: var(--title-first-color);
+    text-decoration: none;  
+}
+.header-list .link.current {
+    color: var(--title-first-color);
+    text-decoration: none;
 }
 .contacts-link {
       color: var(--second-color);
@@ -69,8 +74,7 @@ body {
 }
 /*about-company*/
 .visually-hidden {
-    display: none; 
-    overflow: hidden; 
+    visibility: hidden;
     pointer-events: none;
     position: absolute;
 }
@@ -78,7 +82,7 @@ body {
     list-style-type: none;
 }
 .about-company-heading {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -93,7 +97,7 @@ body {
 }
 /*our-work*/
 .section-heading {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -115,8 +119,6 @@ body {
     color: var(--first-color);
 }
 .our-team-list-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -153,16 +155,20 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--title-second-color);
+    cursor: pointer;
+}
+.button-filter:hover,
+.button-filter:focus {
     color: var(--buttom-text-color);
     background-color: var(--title-first-color);
-    cursor: pointer;
 }
 /*projects*/
 .projects-list {
     list-style-type: none;
 }
 .projects-heading {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
