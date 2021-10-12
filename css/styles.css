@@ -74,6 +74,7 @@ body {
 }
 /*about-company*/
 .visually-hidden {
+    display:none;
     visibility: hidden;
     pointer-events: none;
     position: absolute;
